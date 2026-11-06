@@ -1,0 +1,118 @@
+.root {
+  position: relative;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 20px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  margin-top: clamp(34px, 4vw, 46px);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+  padding: clamp(22px, 2.6vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-xs);
+  transition:
+    transform var(--t-med),
+    box-shadow var(--t-med),
+    border-color var(--t-med);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-soft);
+  box-shadow: var(--shadow-sm);
+}
+
+.quoteIcon {
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 22px;
+  color: var(--rose-soft);
+}
+
+.quote {
+  font-size: 13.5px;
+  line-height: 2.05;
+  color: var(--ink-2);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid var(--rose-soft);
+  border-radius: 50%;
+  background: var(--rose-tint);
+  color: var(--rose-deep);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.verified {
+  color: var(--gold);
+}
+
+.meta {
+  font-size: 10.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+}

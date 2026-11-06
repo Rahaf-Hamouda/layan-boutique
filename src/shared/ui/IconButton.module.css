@@ -1,0 +1,48 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--ink);
+  transition:
+    background-color var(--t-fast),
+    color var(--t-fast),
+    border-color var(--t-fast);
+}
+
+.plain:hover {
+  background: var(--cream-2);
+}
+
+.outline {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.outline:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.badge {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding-inline: 4px;
+  border-radius: var(--r-pill);
+  background: var(--rose);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  border: 2px solid var(--cream);
+}

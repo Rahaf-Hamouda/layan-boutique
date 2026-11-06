@@ -1,0 +1,31 @@
+.root ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.root li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.root a {
+  transition: color var(--t-fast);
+}
+
+.root a:hover {
+  color: var(--rose-deep);
+}
+
+.root span[aria-current='page'] {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.root svg {
+  color: var(--line-strong);
+}

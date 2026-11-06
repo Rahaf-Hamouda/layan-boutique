@@ -1,0 +1,3 @@
+.grid {
+  margin-top: clamp(32px, 4vw, 52px);
+}

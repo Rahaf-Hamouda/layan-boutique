@@ -1,0 +1,53 @@
+:root {
+  --ink: #2a1c22;
+  --ink-2: #4a3740;
+  --muted: #7d6a73;
+  --muted-2: #9c8a92;
+  --cream: #faf6f1;
+  --cream-2: #f4ece4;
+  --cream-3: #efe3d8;
+  --surface: #fffdfb;
+  --rose: #b76e79;
+  --rose-deep: #9a5560;
+  --rose-soft: #f3e0dd;
+  --rose-tint: #fbf0ee;
+  --gold: #c2a06b;
+  --gold-deep: #a9854f;
+  --gold-soft: #ecdcbf;
+  --line: #eadfd4;
+  --line-strong: #dccbbb;
+  --success: #5d7d63;
+  --danger: #b4554e;
+  --white: #ffffff;
+
+  --font-body: 'Almarai', 'Segoe UI', Tahoma, sans-serif;
+  --font-display: 'El Messiri', 'Almarai', 'Segoe UI', serif;
+  --font-latin: 'Cormorant Garamond', Georgia, serif;
+
+  --container: 1264px;
+  --gutter: clamp(20px, 4.5vw, 56px);
+  --header-h: 78px;
+
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+  --r-arch: 999px 999px 18px 18px;
+
+  --shadow-xs: 0 1px 2px rgba(42, 28, 34, 0.05);
+  --shadow-sm: 0 8px 22px -12px rgba(42, 28, 34, 0.16);
+  --shadow-md: 0 22px 48px -22px rgba(42, 28, 34, 0.24);
+  --shadow-rose: 0 20px 44px -20px rgba(154, 85, 96, 0.4);
+  --shadow-gold: 0 18px 40px -22px rgba(169, 133, 79, 0.45);
+
+  --ease: cubic-bezier(0.22, 0.68, 0.28, 1);
+  --t-fast: 0.18s var(--ease);
+  --t-med: 0.35s var(--ease);
+  --t-slow: 0.7s var(--ease);
+
+  --z-header: 40;
+  --z-drawer: 80;
+  --z-overlay: 75;
+  --z-toast: 95;
+}

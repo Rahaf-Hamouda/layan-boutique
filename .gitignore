@@ -1,0 +1,6 @@
+node_modules
+dist
+.imgtmp
+*.local
+*.log
+.DS_Store

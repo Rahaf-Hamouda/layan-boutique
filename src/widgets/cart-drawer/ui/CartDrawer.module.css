@@ -1,0 +1,137 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.progressCard {
+  padding: 14px 16px;
+  border: 1px solid var(--rose-soft);
+  border-radius: var(--r-md);
+  background: var(--rose-tint);
+}
+
+.progressHead {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--rose-deep);
+}
+
+.progressHead svg {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.progressHead p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.progressHead b {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.progressDone {
+  border-color: rgba(93, 125, 99, 0.25);
+  background: rgba(93, 125, 99, 0.09);
+}
+
+.progressDone .progressHead {
+  color: var(--success);
+}
+
+.track {
+  height: 5px;
+  margin-top: 11px;
+  border-radius: var(--r-pill);
+  background: rgba(183, 110, 121, 0.18);
+  overflow: hidden;
+}
+
+.track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--gold), var(--rose));
+  transition: width 0.6s var(--ease);
+}
+
+.progressDone .track {
+  background: rgba(93, 125, 99, 0.18);
+}
+
+.progressDone .track span {
+  background: var(--success);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.continue {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-2);
+  transition: color var(--t-fast);
+}
+
+.continue:hover {
+  color: var(--rose-deep);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.discount {
+  color: var(--success);
+}
+
+.shipping {
+  color: var(--muted);
+}
+
+.totalRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 5px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.summary > a {
+  margin-top: 5px;
+}
+
+.summary > a + a {
+  margin-top: -1px;
+}
+
+.note {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 10.5px;
+  color: var(--muted);
+}

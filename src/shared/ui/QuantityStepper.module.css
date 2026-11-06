@@ -1,0 +1,48 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--ink-2);
+  transition:
+    background-color var(--t-fast),
+    color var(--t-fast);
+}
+
+.button:hover:not(:disabled) {
+  background: var(--cream-2);
+  color: var(--ink);
+}
+
+.button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.value {
+  min-width: 34px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.sm .button {
+  width: 32px;
+  height: 32px;
+}
+
+.sm .value {
+  min-width: 26px;
+  font-size: 13px;
+}

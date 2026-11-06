@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.current {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.compare {
+  color: var(--muted-2);
+  font-size: 0.82em;
+  text-decoration: line-through;
+  text-decoration-color: var(--rose);
+}
+
+.sm .current {
+  font-size: 14px;
+}
+
+.md .current {
+  font-size: 16.5px;
+}
+
+.lg .current {
+  font-size: clamp(22px, 2.2vw, 27px);
+}
+
+.lg .compare {
+  font-size: 0.6em;
+}
