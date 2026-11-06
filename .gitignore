@@ -1,6 +1,9 @@
 node_modules
 dist
+.vercel
 .imgtmp
 *.local
 *.log
 .DS_Store
+
+.vercel
